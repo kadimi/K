@@ -32,7 +32,7 @@ class K {
 		if( func_num_args() > 1 ) {
 			$params = func_get_arg(1);
 		}
-		if( ! is_array( $params ) ) {
+		if( empty( $params ) ) {
 			$params = array();
 		}
 
@@ -40,7 +40,7 @@ class K {
 		if( func_num_args() > 2 ) {
 			$args = func_get_arg(2);
 		}
-		if( ! is_array( $args ) ) {
+		if( empty( $args ) ) {
 			$args = array();
 		}
 
