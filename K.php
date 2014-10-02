@@ -3,7 +3,7 @@
  * The k framework
  * 
  * @author Nabil Kadimi <nabil@kadimi.com>
- * @version 1.0
+ * @version 1.0.1
  * @package k_framework
  */
 class K {
@@ -184,6 +184,12 @@ class K {
 		$params += array(
 			'id' => '',
 		);
+
+		// Sanitize $params[multiple], and Add brackets if the former is true
+		if( ! empty( $params[ 'multiple' ] ) ) {
+			$params[ 'multiple' ] = 'multiple';
+			$name .= '[]';
+		}
 
 		// Add name
 		$params[ 'name' ] = $name;
