@@ -3,7 +3,7 @@
  * The k framework
  * 
  * @author Nabil Kadimi <nabil@kadimi.com>
- * @version 1.0.1
+ * @version 1.0.2
  * @package k_framework
  */
 class K {
@@ -139,9 +139,10 @@ class K {
 				$value,
 				str_replace( array( '[', ']' ), '_', $name ) . mt_rand( 100, 999 ),
 				array(
-					'teeny' => true,
-					'textarea_name' => $name,
+					'editor_height' => K::get_var( 'editor_height', $args ),
 					'media_buttons' => K::get_var( 'media_buttons', $args ),
+					'teeny' => K::get_var( 'teeny', $args ),
+					'textarea_name' => $name,
 					'textarea_rows' => K::get_var( 'textarea_rows', $args ),
 				)
 			);
