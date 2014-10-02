@@ -140,10 +140,10 @@ class K {
 				str_replace( array( '[', ']' ), '_', $name ) . mt_rand( 100, 999 ),
 				array(
 					'editor_height' => K::get_var( 'editor_height', $args ),
-					'media_buttons' => K::get_var( 'media_buttons', $args ),
+					'media_buttons' => K::get_var( 'media_buttons', $args, TRUE ),
 					'teeny' => K::get_var( 'teeny', $args ),
 					'textarea_name' => $name,
-					'textarea_rows' => K::get_var( 'textarea_rows', $args ),
+					'textarea_rows' => K::get_var( 'textarea_rows', $args, 20 ),
 				)
 			);
 			$textarea = ob_get_clean();
