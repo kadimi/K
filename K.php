@@ -3,7 +3,7 @@
  * The k framework
  * 
  * @author Nabil Kadimi <nabil@kadimi.com>
- * @version 1.0.3
+ * @version 1.0.4
  * @package k_framework
  */
 class K {
