@@ -390,10 +390,10 @@ function k_scripts() {
 	?>
 	<style>
 		fieldset.k {
-			border: solid 1px lightgray !important;
-			margin-bottom: 1em !important;
-			padding-left: .5em !important;
-			padding-right: .5em !important;
+			border: solid 1px lightgray;
+			margin-bottom: 1em;
+			padding-left: .5em;
+			padding-right: .5em;
 		}
 		fieldset.k legend {
 			background: white;
@@ -416,7 +416,7 @@ function k_scripts() {
 		}
 		fieldset.k.collapsed {
 			display: inline;
-			border: none !important;
+			border: none;
 		}
 	</style>
 	<script>
