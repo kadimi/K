@@ -387,7 +387,9 @@ class K {
 	}
 }
 
-add_action( 'in_admin_footer', 'k_scripts' );
+if (function_exists('add_action')) {
+	add_action( 'in_admin_footer', 'k_scripts' );
+}
 function k_scripts() {
 	?>
 	<style>
