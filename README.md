@@ -1,0 +1,1 @@
+**The K Framework** is a basic HTML generation class [I](http://kadimi.com "Nabil Kadimi – Web Developer") created for the [Skelet Framework](https://github.com/kadimi/skelet "Skelet is a framework for creating WordPress plugins, it eases the creation of advanced option pages, shortcodes and WordPress editor buttons.") but it can be used in any other project.
