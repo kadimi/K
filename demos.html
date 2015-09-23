@@ -1,0 +1,29 @@
+
+<h2>Basic Text Input Field</h2>
+<h3>Code</h3>
+<pre>
+$code = K::input( 'my_txt' );
+</pre>
+<h3>Output</h3>
+<pre>&lt;input name=&quot;my_txt&quot; type=&quot;text&quot;&gt;</pre>
+
+<hr>
+
+<h2>Text Area with Some Attributes and an Initial Value</h2>
+<h3>Code</h3>
+<pre>
+$code = K::textarea('awesome_textarea'
+    , array(
+        'class' => 'class_A class_B',
+        'placeholder' => 'Type your gibberish here...',
+    )
+    , array(
+        'format' => 'Your message:&lt;br&gt; :textarea'
+        'value' => 'How did I get here?',
+    )
+);
+</pre>
+<h3>Output</h3>
+<pre>Your message:&lt;br&gt; &lt;textarea class=&quot;class_A class_B&quot; name=&quot;awesome_textarea&quot; placeholder=&quot;Type your gibberish here...&quot;&gt;How did I get here?&lt;/textarea&gt;</pre>
+<h3>Demo</h3>
+Your message:<br> <textarea class="class_A class_B" name="awesome_textarea" placeholder="Type your gibberish here...">How did I get here?</textarea>
