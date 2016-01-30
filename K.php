@@ -3,7 +3,7 @@
  * The k framework
  * 
  * @author Nabil Kadimi <nabil@kadimi.com>
- * @version 1.0.6
+ * @version 1.0.7
  * @package k_framework
  */
 if ( ! class_exists( 'K' ) ) {
@@ -150,7 +150,7 @@ class K {
 						'statusbar' => K::get_var( 'statusbar', $args, TRUE),
 						'toolbar1' => K::get_var( 'toolbar1', $args, FALSE),
 					),
-					'quicktabs' => K::get_var( 'text_mode_enabled', $args, TRUE),
+					'quicktags' => K::get_var( 'text_mode_enabled', $args, TRUE),
 				)
 			);
 			$textarea = ob_get_clean();
