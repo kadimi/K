@@ -3,10 +3,9 @@
  * The k framework
  * 
  * @author Nabil Kadimi <nabil@kadimi.com>
- * @version 1.0.7
+ * @version 1.0.8
  * @package k_framework
  */
-if ( ! class_exists( 'K' ) ) {
 
 class K {
 
@@ -390,6 +389,8 @@ class K {
 		}
 		return $params_str;
 	}
+
+
 }
 
 if (function_exists('add_action')) {
@@ -454,6 +455,4 @@ function k_scripts() {
 		} );
 	</script>
 	<?php
-}
-
 }
