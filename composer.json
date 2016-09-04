@@ -8,5 +8,7 @@
             "email": "nabil@kadimi.com"
         }
     ],
-    "require": {}
+    "autoload": {
+        "files": [ "src/K.php" ]
+    }
 }
