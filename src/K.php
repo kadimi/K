@@ -223,7 +223,7 @@ class K {
 			}
 		}
 
-		// Use 'default' is 'selected' is empty
+		// Use 'default' if 'selected' is empty
 		if( ! $selected ) {
 			$selected = array( $args[ 'default' ] );
 		}
